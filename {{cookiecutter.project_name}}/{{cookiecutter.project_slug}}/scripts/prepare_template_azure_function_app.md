@@ -11,6 +11,8 @@ From the repo root:
 ```
 `
 
+Fill in Azure blob details or leave as default by pressing return twice.
+
 If you get a permissions error, you may need to run `chmod +x scripts/prepare_template_azure_function_app.sh` first.
 
 
