@@ -61,7 +61,7 @@ echo "Creating reusable module src/${PROJECT_NAME}/${MODULE_NAME}..."
 mkdir -p "src/${PROJECT_NAME}/${MODULE_NAME}"
 
 cat > "src/${PROJECT_NAME}/${MODULE_NAME}/__init__.py" << 'EOF'
-from .example_file import example_function
+from .example_file import example_function as example_function
 EOF
 
 cat > "src/${PROJECT_NAME}/${MODULE_NAME}/example_file.py" << 'EOF'
