@@ -4,12 +4,27 @@
 [![Build status](https://img.shields.io/github/actions/workflow/status/{{cookiecutter.author_github_handle}}/{{cookiecutter.project_name}}/main.yml?branch=main)](https://github.com/{{cookiecutter.author_github_handle}}/{{cookiecutter.project_name}}/actions/workflows/main.yml?query=branch%3Amain)
 [![codecov](https://codecov.io/gh/{{cookiecutter.author_github_handle}}/{{cookiecutter.project_name}}/branch/main/graph/badge.svg)](https://codecov.io/gh/{{cookiecutter.author_github_handle}}/{{cookiecutter.project_name}})
 [![Commit activity](https://img.shields.io/github/commit-activity/m/{{cookiecutter.author_github_handle}}/{{cookiecutter.project_name}})](https://img.shields.io/github/commit-activity/m/{{cookiecutter.author_github_handle}}/{{cookiecutter.project_name}})
-[![License](https://img.shields.io/github/license/{{cookiecutter.author_github_handle}}/{{cookiecutter.project_name}})](https://img.shields.io/github/license/{{cookiecutter.author_github_handle}}/{{cookiecutter.project_name}})
+
 
 {{cookiecutter.project_description}}
 
-- **Github repository**: <https://github.com/{{cookiecutter.author_github_handle}}/{{cookiecutter.project_name}}/>
-- **Documentation** <https://{{cookiecutter.author_github_handle}}.github.io/{{cookiecutter.project_name}}/>
+- **Github repository**: <https://github.com/ingenaium/{{cookiecutter.project_name}}/>
+- **Documentation** <https://ingenaium.github.io/{{cookiecutter.project_name}}/>
+
+## Important! Before starting, apply patch for Azure Function Functionality
+
+To bootstrap a **reusable module** and an **example Azure Function App** inside this cookiecutter-uv project:
+
+From the repo root:
+
+```bash
+./scripts/init_example_function_app.sh
+```
+`
+
+If you get a permissions error, you may need to run `chmod +x scripts/prepare_template_azure_function_app.sh` first.
+
+For more details see `scripts/prepare_template_azure_function_app.sh`.
 
 ## Getting started with your project
 
@@ -74,4 +89,4 @@ For more details, see [here](https://fpgmaas.github.io/cookiecutter-uv/features/
 
 ---
 
-Repository initiated with [fpgmaas/cookiecutter-uv](https://github.com/fpgmaas/cookiecutter-uv).
+Repository initiated with [ingenaium/cookiecutter-uv](https://github.com/ingenaium/cookiecutter-uv).
