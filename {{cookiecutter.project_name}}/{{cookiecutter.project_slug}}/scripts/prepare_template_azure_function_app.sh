@@ -91,7 +91,7 @@ echo "Initialising uv project for the Function App..."
 uv init --python "${PYTHON_VERSION}" >/dev/null
 
 echo "Adding Azure Functions-related dependencies via uv..."
-uv add azure-functions azure-ai-documentanalysis azure-storage-blob >/dev/null
+uv add azure-functions azure-ai-documentintelligence azure-storage-blob >/dev/null
 
 # Make the app depend on the root <project_name> package (local editable)
 echo "Linking Function App to root package '${PROJECT_NAME}'..."
