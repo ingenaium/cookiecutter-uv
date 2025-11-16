@@ -24,10 +24,10 @@ print(name.replace("-", "_"))
 EOF
 )"
 fi
-MODULE_NAME="${MODULE_NAME:-example_module}"        # reusable module name
-APP_DIR_NAME="${APP_DIR_NAME:-example_function_app}"# folder under apps/
-FUNC_NAME="${FUNC_NAME:-ExampleAzureFunctionApp}"   # Azure Function name
-PYTHON_VERSION="${PYTHON_VERSION:-3.12}"            # uv Python version
+MODULE_NAME="${MODULE_NAME:-example_module}"          # reusable module name
+APP_DIR_NAME="${APP_DIR_NAME:-example_function_app}"  # folder under apps/
+FUNC_NAME="${FUNC_NAME:-ExampleAzureFunctionApp}"     # Azure Function name
+PYTHON_VERSION="${PYTHON_VERSION:-3.12}"              # uv Python version
 
 echo "Bootstrapping with:"
 echo "  PROJECT_NAME  = ${PROJECT_NAME}"
